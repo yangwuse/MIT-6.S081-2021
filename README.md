@@ -1,2 +1,2 @@
-# mit-6.828-2020
+# mit-6.s081-2020
 Learning record
