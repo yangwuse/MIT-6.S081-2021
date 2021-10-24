@@ -1,3 +1,5 @@
+// copy.c: copy input to output.
+
 #include <unistd.h>  /* read() write() */
 #include <stdlib.h>  /* exit() */
                                                                                             
