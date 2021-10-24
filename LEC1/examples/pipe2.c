@@ -1,4 +1,4 @@
-#include <unistd.h>  /* pipe() read() write() */                                            
+#include <unistd.h>  /* pipe() fork() read() write() */                                            
 #include <stdlib.h>  /* exit() */
 
 // pipe2.c: communication between two processes
