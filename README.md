@@ -1,4 +1,4 @@
-Lecture home: https://pdos.csail.mit.edu/6.S081/2021/schedule.html
+Lecture: https://pdos.csail.mit.edu/6.S081/2021/schedule.html
 
 handouts: https://pdos.csail.mit.edu/6.S081/2021/xv6/book-riscv-rev2.pdf
 
