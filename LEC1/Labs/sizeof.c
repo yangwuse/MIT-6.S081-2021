@@ -24,6 +24,6 @@ int main()
             size(buf), size(buf2), size(buf3), size(buf4),size(buf5));
 
     // 5: strlen dont count 0, but sizeof count
-    printf("%d", strlen(buf2));
+    printf("%d\n", strlen(buf2));
     exit(0);
 }
