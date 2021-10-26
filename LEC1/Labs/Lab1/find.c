@@ -32,7 +32,7 @@ char *fmtname(char *path)
     if (strlen(p) >= DIRSIZ)
         return p;
     memmove(buf, p, strlen(p));
-    // debug 1h: don't add null-terminal char
+    // debug 1h: forget to add null-terminal char
     *(buf + strlen(p)) = 0;
     return buf;
 
@@ -64,7 +64,7 @@ void find(char *path)
             break;
 
         case T_DIR:
-            // precheck: buf size >= len(path) + 1('/') + DIRSIZ + 1('\0')
+            // precheck to fail fast: buf size >= len(path) + 1('/') + DIRSIZ + 1('\0')
             if (strlen(path) + 1 + DIRSIZ + 1 > sizeof buf) {
                 fprintf(2, "path too long\n");
                 // break not return: close(fd)
@@ -91,6 +91,6 @@ void find(char *path)
             }
             break;
     }
-    // debug 2h: forget close fd source, causing cannot open file more
+    // debug 2h: forget to close fd source, causing cannot open file more
     close(fd);
 }
