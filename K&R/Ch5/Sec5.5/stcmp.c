@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #define compare(val) val == 0 ? "==" : \
-				    	val > 0 ? ">" : "<"\
+			val > 0 ? ">" : "<" \
 
 // return 0 if s < t, 0 if s == t, > 0 if s > t
 int strcmp1(char *s, char *t)
